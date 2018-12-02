@@ -1,7 +1,6 @@
 const fetch = require('node-fetch');
-const url = 'https://s3-eu-west-1.amazonaws.com/knowit-julekalender-2018/input-vekksort.txt';
 
-fetch(url)
+fetch('https://s3-eu-west-1.amazonaws.com/knowit-julekalender-2018/input-vekksort.txt')
   .then(response => response.text())
   .then(text => {
     const lines = text.split('\n').map(value => parseInt(value));
