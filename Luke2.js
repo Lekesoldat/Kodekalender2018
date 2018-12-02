@@ -5,7 +5,7 @@ const main = async () => {
   const response = await fetch('https://s3-eu-west-1.amazonaws.com/knowit-julekalender-2018/input-rain.txt');
   const lines = (await response.text()).split('\n');
 
-  let slopes = {};
+  const slopes = {};
 
   // Traverse all lines
   for (let line of lines) {
