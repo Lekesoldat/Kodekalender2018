@@ -13,6 +13,7 @@ const main = async () => {
     const match = line.match(/\((?<x1>\d+),(?<y1>\d+)\);\((?<x2>\d+),(?<y2>\d+)\)/);
     
     if (match) {
+      // Destructuring
       const {x1, y1, x2, y2} = match.groups;
       const slope = (y2 - y1) / (x2 - x1);
       
