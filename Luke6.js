@@ -12,7 +12,6 @@ function calculateNullTung() {
   console.log(summed);
 }
 
-/* Credit to @fshauge */
 // Uses less than one second
 function isZeroHeavy(i) {
   let n = i;
